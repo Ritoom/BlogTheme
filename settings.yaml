@@ -1,0 +1,18 @@
+sidebar:
+  label: 社交网站
+  items:
+    github:
+      name: github
+      label: GitHub
+      type: text
+      placeholder: "GitHub 用户名"
+    qq:
+      name: qq
+      label: QQ
+      type: text
+      placeholder: "QQ 号"
+    weibo:
+      name: weibo
+      lable: Weibo
+      type: text
+      placeholder: "微博用户名"

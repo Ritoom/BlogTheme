@@ -6,6 +6,6 @@ author:
 description: demo主题
 logo:
 website: 主题地址，可填写为 git 仓库地址
-repo: 
+repo: https://github.com/Ritoom/BlogTheme.git
 version: 0.0.1
 require: 1.3.0
