@@ -27,7 +27,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="details col-lg-9">
+                    <div class="details col-lg-">
                         <div>
                             <h1>${post.title}</h1>
                             <div>
@@ -39,7 +39,7 @@
             </#list>
         </div>
         <div class="col-lg-3">
-            <img src="${user.avatar!}" style="border-radius: 30px;"/>
+            <img src="${user.avatar!}" style="border-radius: 50%;object-fit: contain;max-width: 100%;overflow:hidden;"/>
         </div>
     </div>
     <div>页面底部</div>
