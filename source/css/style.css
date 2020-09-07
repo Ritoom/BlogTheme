@@ -66,6 +66,7 @@ body {
   border-radius: 50%;
   height: 10em;
   width: 10em;
+  object-fit: cover;
   border: 0.35em solid #5ed3bf;
 }
 .item .image span {
