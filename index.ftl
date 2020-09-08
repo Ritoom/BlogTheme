@@ -36,7 +36,7 @@
     </#list>
 </main>
 <div class="right-sidebar">
-<div>
+<div style="position: fixed;">
     <img src="${user.avatar!}" style="border-radius: 50%;width : 100%"/>
     <h1 style="text-align: center;">${blog_title!}</h1>
 </div>
