@@ -1,8 +1,7 @@
 <head>
     <@global.head />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="col-lg-12">导航栏</div>
@@ -23,12 +22,12 @@
                         </span>
                     </div>
                 </div>
-                <div class="details">
+            </div>
+            <div class="details col-lg-10">
+                <div>
+                    <h1><a href="${post.fullPath}">${post.title!}</a></h1>
                     <div>
-                        <h1>${post.title}</h1>
-                        <div>
-                            <p>${post.summary}</p>
-                        </div>
+                        <p>${post.summary}</p>
                     </div>
                 </div>
             </div>
@@ -50,8 +49,8 @@
     </div>
     <div class="col-lg-2">个人介绍</div>
 </div>
-<div>页面底部</div>
+<footer>
+<div></div>
+</footer>
 </body>
-<script>
-
-</script>
+<@global.footer />
