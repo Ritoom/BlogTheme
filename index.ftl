@@ -7,9 +7,9 @@
 <body>
 <div class="col-lg-12">导航栏</div>
 <div class="col-lg-12">
-    <div class="col-lg-8">
+    <div class="col-lg-6">
         <#--  时间线  -->
-        <#list posts.content as post>
+        <#--  <#list posts.content as post>
             <div class="item">
                 <div class="image">
                     <div>
@@ -32,9 +32,23 @@
                     </div>
                 </div>
             </div>
+        </#list>  -->
+        <#list archives.content as archive>
+            <article>
+                <header>
+                    <div>
+                        <time datetime="${archive.createTime}">${archive.year?c}</time>
+                    </div>
+                    <#list archive.posts as post>
+                        <h3>
+                            <a href="${post.fullPath!}">${post.title!}</a>
+                        </h3>
+                    </#list>
+                </header>
+            </article>
         </#list>
     </div>
-    <div class="col-lg-4">个人介绍</div>
+    <div class="col-lg-2">个人介绍</div>
 </div>
 <div>页面底部</div>
 </body>
