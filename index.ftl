@@ -1,14 +1,10 @@
-<head>
-    <@global.head />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
-</head>
+<#include "module/include.ftl"/>
 <body>
 <div class="col-lg-12">导航栏</div>
 <div class="col-lg-12">
     <div class="col-lg-6">
         <#--  时间线  -->
-        <#--  <#list posts.content as post>
+        <#list posts.content as post>
             <div class="item">
                 <div class="image">
                     <div>
@@ -31,8 +27,8 @@
                     </div>
                 </div>
             </div>
-        </#list>  -->
-        <#list archives.content as archive>
+        </#list>
+        <#--  <#list archives.content as archive>
             <article>
                 <header>
                     <div>
@@ -45,7 +41,7 @@
                     </#list>
                 </header>
             </article>
-        </#list>
+        </#list>  -->
     </div>
     <div class="col-lg-2">个人介绍</div>
 </div>
